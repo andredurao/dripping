@@ -1,38 +1,61 @@
-.App {
+.drip-container {
+  /* border: 5px solid yellow; */
+  /* min-width: 50%; */
+  /* max-height: 50%; */
+  height: 150px;
+  margin-bottom: 150px;
+}
+
+.start-button {
+  min-width: 50%;
+}
+
+.control-panel {
   text-align: center;
+  margin-bottom: 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.control-panel button{
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drop {
+  position: relative;
+	width: 20px;
+	height: 20px;
+  top: -30px;
+  margin: 0 auto;
+	background: #FFF;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+  -moz-animation-name: drip;
+  -webkit-animation-name: drip;
+  animation-name: drip;
+  -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
+  -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
+  animation-timing-function: cubic-bezier(1,0,.91,.19);
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  /* animation-duration: 2s; */
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.drop:before {
+  content: "";
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 30px solid rgba(255,255,255,1);
+  top: -22px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes drip {
+    to {
+      top: 190px;
+    }
 }

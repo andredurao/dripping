@@ -1,3 +1,18 @@
+# A drip IV simulator to help setup IVs dripping frequency
+
+## How to use
+
+1. Set the desired frequency (drops per minute)
+2. Press start/stop
+
+References:
+
+1. https://en.wikipedia.org/wiki/Intravenous_therapy
+
+Inspired by:
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
