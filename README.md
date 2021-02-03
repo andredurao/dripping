@@ -1,4 +1,4 @@
-# A drip IV simulator to help setup IVs dripping frequency
+# A drip simulator to help setup IVs or enteral nutrition dripping frequency
 
 ## How to use
 

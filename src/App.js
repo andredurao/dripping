@@ -1,4 +1,3 @@
-// https://codepen.io/andredurao/pen/YzGMXaL
 import React, { useState } from 'react';
 import './App.css';
 
